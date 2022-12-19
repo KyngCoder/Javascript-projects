@@ -14,10 +14,8 @@ let counter = setInterval(() => {
   let minute = Math.floor((dateDiff % (1000 * 60 * 60)) / (1000 * 60));
   let second = Math.floor((dateDiff % (1000 * 60)) / 1000);
 
-  var mybr = document.createElement("br");
-
   days.innerHTML = day < 10 ? `0${day} <br /> Days` : `${day} <br /> Days`;
-  days.appendChild(mybr);
+
   hours.innerHTML =
     hour < 10 ? `0${hour} <br /> Hours` : `${hour} <br /> Hours`;
   minutes.innerHTML =
